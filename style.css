@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fafafa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 100%;
+  position: relative;
+}
+footer {
+  margin-top: 40px;
+}
+main {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+}
+.home-img {
+  display: inline;
+  width: 30%;
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+header {
+  background-color: #0081c5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+}
+nav a {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+.btn-menu {
+  display: none;
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+}
+table {
+  display: inline;
+  width: 40%;
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  background-color: #eee;
+  padding: 20px;
+}
+table th, table td {
+  text-align: left;
+  padding: 1px 2px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 30%;
+}
+
+@media (max-width: 540px) {
+  .btn-menu {
+      display: block;
+  }
+  header{
+      flex-wrap: wrap;
+  }
+  header nav {
+      display: none;
+      width: 100%;
+  }
+  .show header nav {
+      display: block;
+      margin-top: 20px;
+  }
+  .show header nav ul li {
+      display: block;
+      width: 100%;
+      margin: 0;
+  }
+  .show header nav a {
+      padding: 10px 0;
+      display: block;
+  }
+  main .banner {
+      height: 200px;
+  }
+  main .banner h2 {
+      font-size: 3rem;
+  }
+  .row {
+      flex-wrap: wrap;
+  }
+  .one-col, 
+  .three-col {
+      width: 100%;
+  }
+
+  .home-img {
+    display: block;
+    width: 100%;
+  }
+  table {
+    display: block;
+    width: 100%;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
