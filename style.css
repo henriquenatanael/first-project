@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fafafa;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 img {
   width: 100%;
@@ -13,6 +13,7 @@ img {
 }
 footer {
   margin-top: 40px;
+  text-align: center;
 }
 main {
   margin: 40px auto;
@@ -111,20 +112,6 @@ table th, table td {
       padding: 10px 0;
       display: block;
   }
-  main .banner {
-      height: 200px;
-  }
-  main .banner h2 {
-      font-size: 3rem;
-  }
-  .row {
-      flex-wrap: wrap;
-  }
-  .one-col, 
-  .three-col {
-      width: 100%;
-  }
-
   .home-img {
     display: block;
     width: 100%;
